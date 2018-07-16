@@ -1,1 +1,23 @@
-lksdjflskadjfj fjf asdf sadf
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    heloowww welcome to this app
+
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript">
+      var socket = io();
+
+      socket.on('connect', ()=>{
+        console.log('Connected to server');
+      });
+
+      socket.on('disconnect', ()=>{
+        console.log('disconnect from server');
+      });
+    </script>
+  </body>
+</html>
